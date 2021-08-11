@@ -1,0 +1,12 @@
+[package]
+name = "shade"
+version = "0.1.0"
+edition = "2018"
+
+[profile.release]
+lto = true
+
+[dependencies]
+blake3 = { version = "^1.0.0", features = ["rayon"]}
+rayon = "^1.5.1"
+rand = "^0.8.4"
